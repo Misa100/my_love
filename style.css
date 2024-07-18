@@ -1,0 +1,178 @@
+body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ddd8d4;
+}
+
+/* .container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+} */
+
+.text {
+    font-size: 20px; 
+    color: #333; 
+    font-family: 'Arial', sans-serif; 
+    margin-bottom: 10px; 
+}
+
+/* .second-text {
+    font-size: 20px; 
+    color: #333; 
+    font-family: 'Arial', sans-serif; 
+    margin-bottom: 10px; 
+} */
+
+.second-text {
+    font-size: 20px;
+    color: #2d7986;
+    font-family: 'Lobster', cursive;
+    margin-bottom: 10px;
+    animation: blinkAndSlide 3s infinite, slideIn 4s forwards;
+}
+
+@keyframes blinkAndSlide {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.third-text-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.third-text {
+    font-size: 30px;
+    color: #333;
+    margin: 15px;
+    font-family: 'Lobster', cursive;
+    margin-bottom: 10px;
+    animation: blinkAndColorChange 2s infinite;
+}
+
+@keyframes blinkAndColorChange {
+    0%, 100% {
+        opacity: 1;
+        color: #333;
+    }
+    50% {
+        opacity: 0;
+        color: #996f9b;
+    }
+}
+
+.character {
+    position: relative;
+    left: 30px;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bonhomme {
+    position: relative;
+    display: flex;
+    background: transparent;
+    justify-content: center;
+    align-items: center;
+    width: 500px;  
+    height: 500px;
+}
+
+
+.kiss {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    font-size: 40px;
+    color: rgb(48, 175, 133);
+    display: flex;
+    font-family: 'Bubblegum Sans', cursive; 
+    animation: bounce 1s infinite; 
+}
+
+
+.show-button-1 {
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #448996;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 210px;
+    font-family: 'Bubblegum Sans', cursive;
+    margin-bottom: 20px;
+}
+
+.show-button {
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #448996;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Bubblegum Sans', cursive;
+    margin-bottom: 20px;
+}
+
+.show-button:hover, .show-button-1:hover {
+    background-color: #33707b;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    outline: none;
+    transform: scale(1.05);
+}
+
+/* 
+.show-button:first-child {
+    display:flex;
+    background-color: #f0f0f0;
+} */
+
+
+
+/* définition de l'animation */
+@keyframes sweep {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    50% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(100%);
+}
+}
